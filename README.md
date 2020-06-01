@@ -2,13 +2,11 @@
 
 Binary is the number system all digital computers are based on. Therefore it's important for developers to understand binary, or base 2, mathematics. The purpose of Bin2Dec is to provide practice and understanding of how binary calculations.
 
-Bin2Dec allows the user to enter strings of up to 8 binary digits, 0's and 1's, in any sequence and then displays its decimal equivalent.
-
 ## Built With
 
-* [CSS]
-* [HTML]
-* [Javascript]
+* CSS
+* HTML
+* Javascript
 
 ## Features
 
@@ -21,8 +19,10 @@ User views the results in a single output field containing the decimal (base 10)
 Download as a zip file or clone the repository:
 
 ```sh
-git clone 
+git clone https://github.com/gustavodahora/bin2dec.git
 ```
+
+Open the index.html file using your browser. 
 
 ## License
 
