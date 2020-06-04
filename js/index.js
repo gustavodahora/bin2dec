@@ -28,7 +28,7 @@ function calculate() {
 
 function printError() {
     let errorBox = document.querySelector("[class=number-binary]")
-    errorBox.innerHTML += `<p class="errorBox" name="errorBox">Este número não é binário</p>`
+    errorBox.innerHTML += `<p class="errorBox" name="errorBox">This number is not binary</p>`
 }
 
 function cleanError() {
