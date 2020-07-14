@@ -44,12 +44,27 @@ function getHistory(binary, decimal) {
 
     if (historyLength < 4) { 
         let history = document.querySelector("[class=container-history]")
-        history.innerHTML += `<p class="history">${binary} = ${decimal}</p><br>`
+        history.innerHTML += `<div class="history"><p>${binary} = ${decimal}</p><br></div>`
     } else {
-        let history = document.querySelector("[class=container-history]")
-        history.innerHTML += `<p class="history">${binary} = ${decimal}</p><br>`
-    }
+        // Remove o primeiro elemento do histórico.
+        let remove = document.querySelector("[class=history]")
+        remove.remove()
 
+        let history = document.querySelector("[class=container-history]")
+        history.innerHTML += `<div class="history"><p>${binary} = ${decimal}</p><br></div>`
+    }
 }
+
+function cleanHistory() {
+    for (let o = 0; o < 4; o++) {
+        let remove = document.querySelector("[class=history]")
+            if (remove) {
+                remove.parentNode.removeChild(remove);    
+            }
+    }
+}
+
+let i = 0
 document.querySelector("[name=binary]")
 document.addEventListener("change", calculate)
+document.querySelector("[class=clean-history-Button]").addEventListener("click", cleanHistory)
